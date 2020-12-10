@@ -1,6 +1,6 @@
-const Sequelize = require("sequelize");
-const sequelize = require("../back/JEI-e-commerce-backend/server/database/connection");
-module.exports = sequelize.define("Product", {
+const Sequelize = require("sequelize"); 
+const db = require('../server/database/connection')
+module.exports = db.define("Product", {
   id: {
     type: Sequelize.INTEGER(11),
     allowNull: false,
