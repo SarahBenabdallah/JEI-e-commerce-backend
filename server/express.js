@@ -11,9 +11,9 @@ const userRoutes = require("./routes/userRoutes");
 //to access req body
 app.use(bodyParser.json());
 //connetion to database
-require("./database/connection"); /*fixing the cors problem */
+require("./database/connection");
 
-/*security breach */ app.use((req, res, next) => {
+/*fixing the cors problem */ /*security breach */ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Headers",
