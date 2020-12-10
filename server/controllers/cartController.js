@@ -1,2 +1,2 @@
-exports.get = (req, res) => {};
+exports.getOne = (req, res) => {};
 exports.post = (req, res) => {};
