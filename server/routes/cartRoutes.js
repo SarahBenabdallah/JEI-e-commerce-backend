@@ -4,4 +4,4 @@ module.exports = router;
 const cartCntrl = require("../controllers/cartController");
 /*this file contains all the application-users- routes*/
 router.post("/post", cartCntrl.post);
-router.getOne("/get/:id", cartCntrl.getOne);
+router.get("/get/:id", cartCntrl.getOne);
