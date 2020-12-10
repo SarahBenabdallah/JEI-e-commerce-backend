@@ -6,3 +6,4 @@ const sequelize = require("sequelize");
 app.use(bodyParser.json());
 //connetion to database
 require("./database/connection");
+module.exports = app;
